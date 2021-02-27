@@ -1,4 +1,5 @@
 resources/
+events.out.tfevents.*
 
 natural-language-processing-with-attention-models/week1/Assignments/output_dir/model.pkl.gz
 
