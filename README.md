@@ -1,7 +1,7 @@
 # natural-language-processing-specialization
 
 
-# shareable link of cert
+# shareable links of cert
 1. https://www.coursera.org/account/accomplishments/certificate/XFH4JT67ZLU4
 
 2. https://www.coursera.org/account/accomplishments/certificate/NMQC7CMAUH3S
