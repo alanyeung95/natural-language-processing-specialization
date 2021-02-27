@@ -3,6 +3,9 @@ events.out.tfevents.*
 
 natural-language-processing-with-attention-models/week1/Assignments/output_dir/model.pkl.gz
 
+natural-language-processing-with-attention-models/week2/Assignments/data/
 natural-language-processing-with-attention-models/week2/Assignments/data/downloads/
+cnn_dailymail*
+
 natural-language-processing-with-attention-models/week4/Assignments/data/data.json
 natural-language-processing-with-attention-models/week4/Assignments/model/
