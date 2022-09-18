@@ -14,6 +14,21 @@ nat: natural phenomenon
 O: filler word
 ```
 
+### sample output
+
+```
+Peter B-per
+Navarro, I-per
+White B-org
+House I-org
+Sunday B-tim
+morning I-tim
+White B-org
+House I-org
+coronavirus B-tim
+fall, B-tim
+```
+
 ## Sample Data
 
 Using data from Kaggle, a subsidiary of Google LLC, is an online community of data scientists and machine learning practitioners.
