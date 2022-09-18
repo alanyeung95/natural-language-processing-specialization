@@ -1,8 +1,8 @@
-## overview
+## Overview
 
 LSTM + attention(Q,K,V)
 
-## input
+## Input
 
 VOCAB_FILE = 'ende_32k.subword'
 
@@ -46,7 +46,7 @@ THIS IS THE TOKENIZED VERSION OF THE GERMAN TRANSLATION:
      0     0     0     0]
 ```
 
-## model
+## Model
 
 ### Input encoder
 
@@ -122,7 +122,7 @@ def pre_attention_decoder_fn(mode, target_vocab_size, d_model):
     return pre_attention_decoder
 ```
 
-### whole model
+### Whole model
 
 ```
 # UNQ_C4
