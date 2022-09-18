@@ -2,6 +2,31 @@
 
 LSTM + attention(Q,K,V)
 
+## Data
+
+Using Opus, a growing collection of translated texts from the web. Particularly, we will get an English to German translation subset specified as opus/medical which has medical related texts. I
+
+### Importing data
+
+Using TFDS
+
+```
+# Get generator function for the training set
+# This will download the train dataset if no data_dir is specified.
+train_stream_fn = trax.data.TFDS('opus/medical',
+                                 data_dir='./data/',
+                                 keys=('en', 'de'),
+                                 eval_holdout_size=0.01, # 1% for eval
+                                 train=True)
+
+# Get generator function for the eval set
+eval_stream_fn = trax.data.TFDS('opus/medical',
+                                data_dir='./data/',
+                                keys=('en', 'de'),
+                                eval_holdout_size=0.01, # 1% for eval
+                                train=False)
+```
+
 ## Input
 
 VOCAB_FILE = 'ende_32k.subword'
@@ -195,3 +220,17 @@ def NMTAttn(input_vocab_size=33300,
 
     return model
 ```
+
+## Evulation
+
+### BLEU
+
+Bleu measures precision: how much the words (and/or n-grams) in the machine generated summaries appeared in the human reference summaries.
+
+### ROUGE
+
+Rouge measures recall: how much the words (and/or n-grams) in the human reference summaries appeared in the machine generated summaries.
+
+### BLEU vs ROUGE
+
+Naturally - these results are complementing, as is often the case in precision vs recall. If you have many words from the system results appearing in the human references you will have high Bleu, and if you have many words from the human references appearing in the system results you will have high Rouge.
